@@ -3,7 +3,6 @@ var db = require("./db");
 const spSchema = new db.mongoose.Schema(
   {
     id_theloai:{type: db.mongoose.Schema.Types.ObjectId, ref:'theloaiModel'},
-    ma: { type: String, required: true },
     name: { type: String, required: true },
     soluong: { type: String, required: true },
     price: { type: String, required: true },

@@ -55,7 +55,6 @@ exports.addsp = async (req, res, next) => {
 
     // Tạo đối tượng model để gắn dữ liệu
     let objSP = new myMD.spModel();
-    objSP.ma = req.body.ma;
     objSP.name = req.body.name;
     objSP.soluong = req.body.soluong;
     objSP.price = req.body.price;
